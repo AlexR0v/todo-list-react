@@ -1,7 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const el = <h1>Привет</h1>;
+import SearchPanel from './components/serch-panel';
+import AppHeader from './components/app-header';
+import TodoList from './components/todo-list';
 
+const App = () => {
+	return (
+		<div>
+			<AppHeader/>
+			<SearchPanel/>
+			<TodoList/>
+		</div>
+	);
+};
 
-	ReactDOM.render(el, document.getElementById('root'));
+ReactDOM.render(<App/> , document.getElementById('root'));
